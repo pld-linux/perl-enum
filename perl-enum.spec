@@ -9,7 +9,7 @@ Summary:	enum - C style enumerated types and bitmask flags in Perl
 Summary(pl):	enum - typy wyliczeniowe w stylu C i znaczniki bitowe dla Perla
 Name:		perl-enum
 Version:	1.016
-Release:	3
+Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl

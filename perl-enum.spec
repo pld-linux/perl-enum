@@ -20,7 +20,7 @@ Summary(uk):	Модуль для Perl enum
 Summary(zh_CN):	enum Perl дё©И
 Name:		perl-enum
 Version:	1.016
-Release:	1
+Release:	2
 License:	?
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz

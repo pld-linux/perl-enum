@@ -1,27 +1,17 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	enum
 %define		pnam	enum
-Summary:	enum Perl module
-Summary(cs):	Modul enum pro Perl
-Summary(da):	Perlmodul enum
-Summary(de):	enum Perl Modul
-Summary(es):	Módulo de Perl enum
-Summary(fr):	Module Perl enum
-Summary(it):	Modulo di Perl enum
-Summary(ja):	enum Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	enum ÆÞ ¸ðÁÙ
-Summary(nb):	Perlmodul enum
-Summary(pl):	Modu³ perla enum
-Summary(pt_BR):	Módulo Perl enum
-Summary(pt):	Módulo de Perl enum
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl enum
-Summary(sv):	enum Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl enum
-Summary(zh_CN):	enum Perl Ä£¿é
+Summary:	enum - C style enumerated types and bitmask flags in Perl
+Summary(pl):	enum - typy wyliczeniowe w stylu C i znaczniki bitowe dla Perla
 Name:		perl-enum
 Version:	1.016
-Release:	2
-License:	?
+Release:	3
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 # Source0-md5:	aace7ee8648e5d20c0e81f5a51cb6604
@@ -46,10 +36,13 @@ warto¶ciach numerycznych, podobnie do typów enum w C.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT

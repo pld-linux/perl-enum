@@ -41,7 +41,7 @@ warto¶ciach numerycznych, podobnie do typów enum w C.
 %setup -q -n %{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install

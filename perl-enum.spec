@@ -10,7 +10,7 @@ Summary(fr):	Module Perl enum
 Summary(it):	Modulo di Perl enum
 Summary(ja):	enum Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	enum ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul enum
+Summary(nb):	Perlmodul enum
 Summary(pl):	Modu³ perla enum
 Summary(pt_BR):	Módulo Perl enum
 Summary(pt):	Módulo de Perl enum

@@ -18,7 +18,7 @@ Summary(ru):	Модуль для Perl enum
 Summary(sv):	enum Perlmodul
 Summary(uk):	Модуль для Perl enum
 Summary(zh_CN):	enum Perl дё©И
-Name:		perl-enum-enum
+Name:		perl-enum
 Version:	1.016
 Release:	1
 License:	?

@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	enum
-%define	pnam	enum
+%define		pdir	enum
+%define		pnam	enum
 Summary:	enum - C style enumerated types and bitmask flags in Perl
 Summary(pl):	enum - typy wyliczeniowe w stylu C i znaczniki bitowe dla Perla
 Name:		perl-enum

@@ -43,7 +43,7 @@ warto¶ciach numerycznych, podobnie do typów enum w C.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install

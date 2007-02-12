@@ -6,7 +6,7 @@
 %define		pdir	enum
 %define		pnam	enum
 Summary:	enum - C style enumerated types and bitmask flags in Perl
-Summary(pl):	enum - typy wyliczeniowe w stylu C i znaczniki bitowe dla Perla
+Summary(pl.UTF-8):   enum - typy wyliczeniowe w stylu C i znaczniki bitowe dla Perla
 Name:		perl-enum
 Version:	1.016
 Release:	4
@@ -24,9 +24,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 enum defines a set of symbolic constants with ordered numeric values
 ala C enum types.
 
-%description -l pl
-enum definiuje zestaw sta≥ych symbolicznych o uporz±dkowanych
-warto∂ciach numerycznych, podobnie do typÛw enum w C.
+%description -l pl.UTF-8
+enum definiuje zestaw sta≈Çych symbolicznych o uporzƒÖdkowanych
+warto≈õciach numerycznych, podobnie do typ√≥w enum w C.
 
 %prep
 %setup -q -n %{pnam}-%{version}

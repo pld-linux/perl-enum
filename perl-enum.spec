@@ -1,10 +1,9 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
-%define		pdir	enum
+
 %define		pnam	enum
+%include	/usr/lib/rpm/macros.perl
 Summary:	enum - C style enumerated types and bitmask flags in Perl
 Summary(pl.UTF-8):	enum - typy wyliczeniowe w stylu C i znaczniki bitowe dla Perla
 Name:		perl-enum
@@ -13,10 +12,11 @@ Release:	5
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pnam}/%{pnam}-%{version}.tar.gz
 # Source0-md5:	aace7ee8648e5d20c0e81f5a51cb6604
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/enum/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
